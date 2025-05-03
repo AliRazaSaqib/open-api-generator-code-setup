@@ -1,0 +1,22 @@
+{
+  "$schema": "./node_modules/@openapitools/openapi-generator-cli/config.schema.json",
+  "spaces": 2,
+  "generator-cli": {
+    "version": "7.13.0",
+    "generators": {
+      "react-openapi": {
+        "generatorName": "typescript-fetch",
+        "output": "./src/shared/api/generated",
+        "inputSpec": "./swagger.json",
+        "additionalProperties": {
+          "supportsES6Imports": true,
+          "useSingleRequestParameter": true,
+          "useSingleRequestBody": true,
+          "withSeparateModelsAndApi": true,
+          "skipFormModel": true,
+          "modelPropertyNaming": "original"
+        }
+      }
+    }
+  }
+}
